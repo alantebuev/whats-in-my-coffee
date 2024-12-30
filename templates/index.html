@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's in my coffee?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --search-height: 44px;
+            --primary-color: #4A90E2;
+            --card-bg-color: #ffffff;
+            --card-border-radius: 12px;
+            --card-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            --font-color: #343538;
+            --secondary-font-color: #666;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            background: url('{{ url_for('static', filename='wallpaper.png') }}') no-repeat center center fixed;
+            background-size: 100%;
+        }
+
+        .home-hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: flex-start; /* Move elements up */
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8); /* Slight white overlay for readability */
+        }
+
+        .max-width {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        .hero-text {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hero-text h1 {
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            font-weight: 600;
+            font-size: 24px;
+            color: var(--font-color);
+            text-decoration: none;
+            margin-bottom: 16px;
+        }
+
+        .hero-text h2 {
+            font-weight: 400;
+            font-size: 18px;
+            color: var(--secondary-font-color);
+            margin-top: 0;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 500px; /* Increased logo size */
+            width: 100%;
+            height: auto;
+        }
+
+        .search-container {
+            position: relative;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .search-form {
+            position: relative;
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .search-input {
+            width: 100%;
+            height: var(--search-height);
+            padding: 0 44px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-button {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: var(--search-height);
+            height: var(--search-height);
+            border: none;
+            background: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .search-suggestions {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-top: 8px;
+            display: none;
+            z-index: 1000;
+        }
+
+        .suggestions-list {
+            list-style: none;
+            margin: 0;
+            padding: 8px 0;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .suggestion-item {
+            padding: 12px 16px;
+            cursor: pointer;
+        }
+
+        .suggestion-item:hover {
+            background: #f5f5f5;
+        }
+
+        .emphasis {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .results {
+            margin-top: 30px;
+            background: var(--card-bg-color);
+            padding: 20px;
+            border-radius: var(--card-border-radius);
+            box-shadow: var(--card-box-shadow);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .results .user-drink {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .results .user-drink h2 {
+            font-size: 22px;
+            color: var(--font-color);
+            margin-bottom: 10px;
+        }
+
+        .results .user-drink p {
+            font-size: 16px;
+            color: var(--secondary-font-color);
+            margin: 4px 0;
+        }
+
+        .results .alternatives {
+            margin-top: 20px;
+        }
+
+        .results .alternatives h3 {
+            font-size: 18px;
+            color: var(--font-color);
+            margin-bottom: 10px;
+        }
+
+        .results .alternatives ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .results .alternatives li {
+            padding: 10px;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 16px;
+            color: var(--font-color);
+        }
+
+        .results .alternatives li:last-child {
+            border-bottom: none;
+        }
+
+        .results .alternatives li span.save {
+            color: #27ae60; /* Green color for savings */
+            font-weight: bold;
+        }
+
+        .error {
+            color: #ff3b30;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .hero-text h1 {
+                font-size: 32px;
+            }
+
+            .hero-text h2 {
+                font-size: 24px;
+            }
+
+            .search-container {
+                padding: 0 24px;
+            }
+        }
+
+        /* New Card Layout Styles */
+        .card {
+            background: var(--card-bg-color);
+            border-radius: var(--card-border-radius);
+            box-shadow: var(--card-box-shadow);
+            padding: 20px;
+            margin: 20px 0;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-title {
+            font-size: 20px;
+            color: var(--font-color);
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            font-size: 16px;
+            color: var(--secondary-font-color);
+            margin: 5px 0;
+        }
+
+        .card-alternative {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .card-alternative:last-child {
+            border-bottom: none;
+        }
+
+        .alternative-name {
+            font-size: 16px;
+            color: var(--font-color);
+        }
+
+        .alternative-calories {
+            font-size: 16px;
+            color: #27ae60; /* Green color for calories saved */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="home-hero">
+        <div class="max-width">
+            <img src="{{ url_for('static', filename='coffeecup1.png') }}" alt="Logo" class="logo">
+            <div class="hero-text">
+                <h1 role="button" class="link-text">What's in my coffee?</h1>
+                <h2 class="teaser-new__title font-ProximaNova"><span class="teaser-new__title-01 color-override--">Find healthier alternatives to your favorite drinks</span></h2>
+            </div>
+
+            <div class="search-container">
+                <form method="POST" class="search-form">
+                    <button type="submit" aria-label="Search" class="search-button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="#343538" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.496 17.618a8 8 0 1 1 2.121-2.121l3.944 3.942-2.122 2.122zM17 11a6 6 0 1 1-12 0 6 6 0 0 1 12 0"></path>
+                        </svg>
+                    </button>
+                    <input 
+                        type="text" 
+                        name="drink" 
+                        class="search-input"
+                        placeholder="Enter your drink"
+                        autocomplete="off"
+                        required>
+                    <div class="search-suggestions">
+                        <ul class="suggestions-list"></ul>
+                    </div>
+                </form>
+            </div>
+
+            {% if error %}
+                <p class="error">{{ error }}</p>
+            {% endif %}
+
+            {% if original %}
+                <div class="results card">
+                    <div class="user-drink">
+                        <h2>Your Drink: {{ original.drink_name }}</h2>
+                        <p>Size: {{ original.size if original.size else 'Not specified' }} oz</p>
+                        <p>Calories: {{ original.calories }} kcal</p>
+                        <p>Sugar: {{ original.sugar }}g</p>
+                        <p>Protein: {{ original.protein }}g</p>
+                    </div>
+
+                    <div class="alternatives">
+                        <h3>Healthier Alternatives:</h3>
+                        <ul>
+                        {% for alt in alternatives %}
+                            <li class="card-alternative">
+                                <span class="alternative-name">{{ alt.drink_name }} ({{ alt.size if alt.size else 'Not specified' }} oz)</span>
+                                <span class="alternative-calories">-{{ original.calories - alt.calories }} kcal</span>
+                            </li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <script>
+        const input = document.querySelector('.search-input');
+        const suggestions = document.querySelector('.search-suggestions');
+        const suggestionsList = document.querySelector('.suggestions-list');
+        const form = document.querySelector('.search-form');
+
+        input.addEventListener('input', async () => {
+            const query = input.value.trim();
+            if (query.length < 2) {
+                suggestions.style.display = 'none';
+                return;
+            }
+
+            const response = await fetch(`/suggestions?q=${encodeURIComponent(query)}`);
+            const data = await response.json();
+
+            if (data.length > 0) {
+                suggestionsList.innerHTML = data
+                    .map(drink => `
+                        <li class="suggestion-item" data-drink="${drink}">
+                            <span class="emphasis">${drink.substring(0, query.length)}</span>
+                            ${drink.substring(query.length)}
+                        </li>
+                    `)
+                    .join('');
+                suggestions.style.display = 'block';
+            } else {
+                suggestions.style.display = 'none';
+            }
+        });
+
+        suggestionsList.addEventListener('click', (e) => {
+            if (e.target.classList.contains('suggestion-item') || e.target.closest('.suggestion-item')) {
+                const selectedDrink = e.target.dataset.drink || e.target.closest('.suggestion-item').dataset.drink;
+                input.value = selectedDrink;
+                form.submit();
+            }
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!suggestions.contains(e.target) && e.target !== input) {
+                suggestions.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

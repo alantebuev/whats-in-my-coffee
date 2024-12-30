@@ -1,0 +1,162 @@
+Name of Drink,Beverage Type,Size,To Stay / To Take Away,Calories,Protein,Sugar
+Sweet Latte (Whole Milk),Coffee,10 oz,To Stay (Boston),200,10,22
+Sweet Latte (Whole Milk),Coffee,12 oz,To Take Away (Boston),250,13,27
+Sweet Latte (Whole Milk),Coffee,16 oz,To Stay or Take Away (Boston),330,17,35
+Sweet Latte (Skim Milk),Coffee,10 oz,To Stay (Boston),130,9,22
+Sweet Latte (Skim Milk),Coffee,12 oz,To Take Away (Boston),160,11,27
+Sweet Latte (Skim Milk),Coffee,16 oz,To Stay or Take Away (Boston),220,13,37
+Sweet Latte (Almond Milk),Coffee,10 oz,To Stay (Boston),110,2,14
+Sweet Latte (Almond Milk),Coffee,12 oz,To Take Away (Boston),140,3,19
+Sweet Latte (Almond Milk),Coffee,16 oz,To Stay or Take Away (Boston),180,4,23
+Sweet Latte (Oat Milk),Coffee,10 oz,To Stay (Boston),190,4,19
+Sweet Latte (Oat Milk),Coffee,12 oz,To Take Away (Boston),230,5,24
+Sweet Latte (Oat Milk),Coffee,16 oz,To Stay or Take Away (Boston),310,5,25
+Iced Sweet Latte (Whole Milk),Coffee,10 oz,To Stay (Boston),140,8,16
+Iced Sweet Latte (Whole Milk),Coffee,12 oz,To Take Away (Boston),170,10,19
+Iced Sweet Latte (Whole Milk),Coffee,16 oz,To Stay or Take Away (Boston),230,10,25
+Iced Sweet Latte (Skim Milk),Coffee,10 oz,To Stay (Boston),100,7,17
+Iced Sweet Latte (Skim Milk),Coffee,12 oz,To Take Away (Boston),120,9,20
+Iced Sweet Latte (Skim Milk),Coffee,16 oz,To Stay or Take Away (Boston),150,10,25
+Iced Sweet Latte (Almond Milk),Coffee,10 oz,To Stay (Boston),80,2,11
+Iced Sweet Latte (Almond Milk),Coffee,12 oz,To Take Away (Boston),100,2,14
+Iced Sweet Latte (Almond Milk),Coffee,16 oz,To Stay or Take Away (Boston),130,2,16
+Iced Sweet Latte (Oat Milk),Coffee,10 oz,To Stay (Boston),130,2,14
+Iced Sweet Latte (Oat Milk),Coffee,12 oz,To Take Away (Boston),160,3,17
+Iced Sweet Latte (Oat Milk),Coffee,16 oz,To Stay or Take Away (Boston),210,5,24
+Caffé Mocha (Whole Milk),Coffee,10 oz,To Stay (Boston),330,10,17
+Caffé Mocha (Whole Milk),Coffee,12 oz,To Take Away (Boston),390,12,21
+Caffé Mocha (Whole Milk),Coffee,16 oz,To Stay or Take Away (Boston),520,14,25
+Caffé Mocha (Skim Milk),Coffee,10 oz,To Stay (Boston),270,11,18
+Caffé Mocha (Skim Milk),Coffee,12 oz,To Take Away (Boston),320,13,22
+Caffé Mocha (Skim Milk),Coffee,16 oz,To Stay or Take Away (Boston),430,16,30
+Caffé Mocha (Almond Milk),Coffee,10 oz,To Stay (Boston),250,6,16
+Caffé Mocha (Almond Milk),Coffee,12 oz,To Take Away (Boston),300,7,20
+Caffé Mocha (Almond Milk),Coffee,16 oz,To Stay or Take Away (Boston),400,9,25
+Caffé Mocha (Oat Milk),Coffee,10 oz,To Stay (Boston),320,6,24
+Caffé Mocha (Oat Milk),Coffee,12 oz,To Take Away (Boston),380,8,29
+Caffé Mocha (Oat Milk),Coffee,16 oz,To Stay or Take Away (Boston),510,10,39
+Iced Caffé Mocha (Whole Milk),Coffee,10 oz,To Stay (Boston),260,9,17
+Iced Caffé Mocha (Whole Milk),Coffee,12 oz,To Take Away (Boston),310,11,20
+Iced Caffé Mocha (Whole Milk),Coffee,16 oz,To Stay or Take Away (Boston),420,14,26
+Iced Caffé Mocha (Skim Milk),Coffee,10 oz,To Stay (Boston),230,11,19
+Iced Caffé Mocha (Skim Milk),Coffee,12 oz,To Take Away (Boston),270,13,23
+Iced Caffé Mocha (Skim Milk),Coffee,16 oz,To Stay or Take Away (Boston),360,16,31
+Iced Caffé Mocha (Almond Milk),Coffee,10 oz,To Stay (Boston),210,5,13
+Iced Caffé Mocha (Almond Milk),Coffee,12 oz,To Take Away (Boston),260,6,16
+Iced Caffé Mocha (Almond Milk),Coffee,16 oz,To Stay or Take Away (Boston),340,8,21
+Iced Caffé Mocha (Oat Milk),Coffee,10 oz,To Stay (Boston),250,6,20
+Iced Caffé Mocha (Oat Milk),Coffee,12 oz,To Take Away (Boston),300,8,25
+Iced Caffé Mocha (Oat Milk),Coffee,16 oz,To Stay or Take Away (Boston),410,10,32
+Cappuccino (Whole Milk),Coffee,10 oz,To Stay (Boston),80,5,5
+Cappuccino (Whole Milk),Coffee,12 oz,To Take Away (Boston),130,8,7
+Cappuccino (Skim Milk),Coffee,10 oz,To Stay (Boston),45,5,3
+Cappuccino (Skim Milk),Coffee,12 oz,To Take Away (Boston),80,7,5
+Cappuccino (Almond Milk),Coffee,10 oz,To Stay (Boston),50,2,3
+Cappuccino (Almond Milk),Coffee,12 oz,To Take Away (Boston),90,3,5
+Cappuccino (Oat Milk),Coffee,10 oz,To Stay (Boston),70,3,4
+Cappuccino (Oat Milk),Coffee,12 oz,To Take Away (Boston),120,5,7
+Gibraltar (Whole Milk),Coffee,120 g,To Stay (Boston),70,4,5
+Gibraltar (Whole Milk),Coffee,120 g,To Take Away (Boston),70,4,5
+Gibraltar (Skim Milk),Coffee,120 g,To Stay (Boston),40,4,4
+Gibraltar (Skim Milk),Coffee,120 g,To Take Away (Boston),40,4,4
+Gibraltar (Almond Milk),Coffee,120 g,To Stay (Boston),80,2,5
+Gibraltar (Almond Milk),Coffee,120 g,To Take Away (Boston),80,2,5
+Gibraltar (Oat Milk),Coffee,120 g,To Stay (All Regions),60,1,3
+Gibraltar (Oat Milk),Coffee,120 g,To Take Away (All Regions),70,1,5
+Affogato with Gelato,Coffee,160 g,To Stay or Take Away (All Regions),280,5,29
+NOLA Shakerato (Whole Milk),Coffee,12 oz,To Stay or Take Away (Boston),160,8,20
+NOLA Shakerato (Whole Milk),Coffee,16 oz,To Stay or Take Away (Boston),230,9,30
+NOLA Shakerato (Skim Milk),Coffee,12 oz,To Stay or Take Away (Boston),130,9,20
+NOLA Shakerato (Skim Milk),Coffee,16 oz,To Stay or Take Away (Boston),190,10,30
+NOLA Shakerato (Almond Milk),Coffee,12 oz,To Stay or Take Away (Boston),120,2,25
+NOLA Shakerato (Almond Milk),Coffee,16 oz,To Stay or Take Away (Boston),170,3,32
+NOLA Shakerato (Oat Milk),Coffee,12 oz,To Stay or Take Away (Boston),160,2,25
+NOLA Shakerato (Oat Milk),Coffee,16 oz,To Stay or Take Away (Boston),220,3,34
+NOLA Cold Foam (Whole Milk),Coffee,12 oz,To Stay or Take Away (Boston),200,7,16
+NOLA Cold Foam (Whole Milk),Coffee,16 oz,To Stay or Take Away (Boston),270,9,19
+NOLA Cold Foam (Skim Milk),Coffee,12 oz,To Stay or Take Away (Boston),180,8,16
+NOLA Cold Foam (Skim Milk),Coffee,16 oz,To Stay or Take Away (Boston),230,10,19
+NOLA Cold Foam (Almond Milk),Coffee,12 oz,To Stay or Take Away (Boston),170,3,19
+NOLA Cold Foam (Almond Milk),Coffee,16 oz,To Stay or Take Away (Boston),220,4,23
+NOLA Cold Foam (Oat Milk),Coffee,12 oz,To Stay or Take Away (Boston),200,3,18
+NOLA Cold Foam (Oat Milk),Coffee,16 oz,To Stay or Take Away (Boston),260,4,24
+NOLA Cold Foam Add-On,Coffee,45 g,To Stay or Take Away (All Regions),110,2,9
+The Double, Coffee, 4 oz, To Take Away, 0, 0, 0
+Oji Coffee, Coffee, 4 oz, To Take Away, 0, 0, 0
+Iced Coffee Float, Coffee, 12 oz, To Take Away, 250, 0, 28
+Iced Coffee Float, Coffee, 16 oz, To Take Away, 250, 0, 28
+Chai Latte with Whole Milk, Tea, 10 oz, To Stay, 140, 5, 22
+Chai Latte with Whole Milk, Tea, 12 oz, To Take Away, 150, 6, 24
+Chai Latte with Whole Milk, Tea, 16 oz, To Stay or Take Away, 210, 8, 31
+Chai Latte with Nonfat Milk, Tea, 10 oz, To Stay, 110, 7, 22
+Chai Latte with Nonfat Milk, Tea, 12 oz, To Take Away, 120, 8, 24
+Chai Latte with Nonfat Milk, Tea, 16 oz, To Stay or Take Away, 160, 10, 33
+Chai Latte with Almond Milk, Tea, 10 oz, To Stay, 100, 2, 19
+Chai Latte with Almond Milk, Tea, 12 oz, To Take Away, 110, 2, 21
+Chai Latte with Almond Milk, Tea, 16 oz, To Stay or Take Away, 150, 3, 27
+Chai Latte with Oat Milk, Tea, 10 oz, To Stay, 130, 3, 21
+Chai Latte with Oat Milk, Tea, 12 oz, To Take Away, 150, 3, 24
+Chai Latte with Oat Milk, Tea, 16 oz, To Stay or Take Away, 200, 4, 29
+Iced Chai Latte with Whole Milk, Tea, 12 oz, To Stay, 160, 8, 25
+Iced Chai Latte with Whole Milk, Tea, 16 oz, To Stay, 210, 10, 32
+Iced Chai Latte with Nonfat Milk, Tea, 12 oz, To Stay, 120, 8, 25
+Iced Chai Latte with Nonfat Milk, Tea, 16 oz, To Stay, 160, 10, 32
+Iced Chai Latte with Almond Milk, Tea, 12 oz, To Stay, 110, 2, 24
+Iced Chai Latte with Almond Milk, Tea, 16 oz, To Stay, 140, 3, 31
+Iced Chai Latte with Oat Milk, Tea, 12 oz, To Stay, 150, 3, 25
+Iced Chai Latte with Oat Milk, Tea, 16 oz, To Stay, 190, 4, 29
+Iced Winter Nola with Whole Milk, Coffee, 12 oz, To Stay, 210, 7, 28
+Iced Winter Nola with Whole Milk, Coffee, 16 oz, To Stay, 280, 8, 38
+Iced Winter Nola with Skim Milk, Coffee, 12 oz, To Stay, 170, 7, 26
+Iced Winter Nola with Skim Milk, Coffee, 16 oz, To Stay, 220, 8, 36
+Iced Winter Nola with Almond Milk, Coffee, 12 oz, To Stay, 150, 2, 21
+Iced Winter Nola with Almond Milk, Coffee, 16 oz, To Stay, 200, 3, 30
+Iced Winter Nola with Oat Milk, Coffee, 12 oz, To Stay, 200, 3, 28
+Iced Winter Nola with Oat Milk, Coffee, 16 oz, To Stay, 260, 4, 38
+Iced Coffee with Whole Milk, Coffee, 12 oz, To Stay, 200, 8, 30
+Iced Coffee with Whole Milk, Coffee, 16 oz, To Stay, 250, 10, 40
+Iced Coffee with Skim Milk, Coffee, 12 oz, To Stay, 160, 7, 25
+Iced Coffee with Skim Milk, Coffee, 16 oz, To Stay, 210, 9, 35
+Iced Coffee with Almond Milk, Coffee, 12 oz, To Stay, 170, 2, 22
+Iced Coffee with Almond Milk, Coffee, 16 oz, To Stay, 220, 3, 32
+Iced Coffee with Oat Milk, Coffee, 12 oz, To Stay, 190, 3, 26
+Iced Coffee with Oat Milk, Coffee, 16 oz, To Stay, 240, 4, 36
+The Double, Coffee, 4 oz, To Take Away, 0, 0, 0
+Oji Coffee, Coffee, 4 oz, To Take Away, 0, 0, 0
+Cascara Fizz, Other, 12 oz, To Stay, 60, 0, 15
+Cascara Fizz, Other, 12 oz, To Take Away, 60, 0, 15
+Cascara Fizz, Other, 16 oz, To Take Away, 70, 0, 19
+Iced Winter Nola with Whole Milk, Coffee, 12 oz, To Stay, 210, 7, 28
+Iced Winter Nola with Whole Milk, Coffee, 16 oz, To Stay, 280, 8, 38
+Iced Winter Nola with Skim Milk, Coffee, 12 oz, To Stay, 170, 7, 26
+Iced Winter Nola with Skim Milk, Coffee, 16 oz, To Stay, 220, 8, 36
+Iced Winter Nola with Almond Milk, Coffee, 12 oz, To Stay, 150, 2, 21
+Iced Winter Nola with Almond Milk, Coffee, 16 oz, To Stay, 200, 3, 30
+Iced Winter Nola with Oat Milk, Coffee, 12 oz, To Stay, 200, 3, 28
+Iced Winter Nola with Oat Milk, Coffee, 16 oz, To Stay, 260, 4, 38
+Iced Coffee with Whole Milk, Coffee, 12 oz, To Stay, 200, 8, 30
+Iced Coffee with Whole Milk, Coffee, 16 oz, To Stay, 250, 10, 40
+Iced Coffee with Skim Milk, Coffee, 12 oz, To Stay, 160, 7, 25
+Iced Coffee with Skim Milk, Coffee, 16 oz, To Stay, 210, 9, 35
+Iced Coffee with Almond Milk, Coffee, 12 oz, To Stay, 170, 2, 22
+Iced Coffee with Almond Milk, Coffee, 16 oz, To Stay, 220, 3, 32
+Iced Coffee with Oat Milk, Coffee, 12 oz, To Stay, 190, 3, 26
+Iced Coffee with Oat Milk, Coffee, 16 oz, To Stay, 240, 4, 36
+Pour Over Coffee, Coffee, 12 oz, To Stay or Take Away, 0, 0, 0
+Iced Pour Over Coffee, Coffee, 12 oz, To Stay or Take Away, 0, 0, 0
+Au Lait with Whole Milk, Coffee, 12 oz, To Stay, 70, 3, 5
+Au Lait with Whole Milk, Coffee, 12 oz, To Take Away, 70, 3, 5
+Au Lait with Skim Milk, Coffee, 12 oz, To Stay, 40, 4, 5
+Au Lait with Skim Milk, Coffee, 12 oz, To Take Away, 40, 4, 5
+Au Lait with Almond Milk, Coffee, 12 oz, To Stay, 60, 3, 6
+Au Lait with Almond Milk, Coffee, 12 oz, To Take Away, 60, 3, 6
+Au Lait with Oat Milk, Coffee, 12 oz, To Stay, 60, 3, 6
+Au Lait with Oat Milk, Coffee, 12 oz, To Take Away, 60, 3, 6
+Winter Nola with Whole Milk, Coffee, 12 oz, To Stay, 190, 6, 21
+Winter Nola with Whole Milk, Coffee, 16 oz, To Stay, 260, 7, 32
+Winter Nola with Skim Milk, Coffee, 12 oz, To Stay, 150, 7, 25
+Winter Nola with Skim Milk, Coffee, 16 oz, To Stay, 200, 8, 35
+Winter Nola with Almond Milk, Coffee, 12 oz, To Stay, 140, 4, 26
+Winter Nola with Almond Milk, Coffee, 16 oz, To Stay, 190, 5, 36
+Winter Nola with Oat Milk, Coffee, 12 oz, To Stay, 180, 4, 28
+Winter Nola with Oat Milk, Coffee, 16 oz, To Stay, 240, 5, 38
